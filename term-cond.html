@@ -1,0 +1,281 @@
+<?php include("header.php"); // Include header if you have a common header file ?>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Terms and Conditions - Expert Snippet</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Global Styles */
+       body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to right, #004080, #00aaff); /* Gradient for the whole page */
+    color: #333;
+    height: 100%; /* Ensures the gradient covers the entire height */
+    overflow-x: hidden; /* Prevents horizontal scroll */
+    display: flex;
+    flex-direction: column;
+}
+
+/* Navbar Styles */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
+    background-color: #004080;
+    z-index: 10; /* Keeps navbar on top */
+}
+
+.navbar .logo a {
+    color: #fff;
+    font-size: 28px;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.nav-links {
+    display: flex;
+    gap: 25px;
+}
+
+.nav-links a {
+    color: #f0f0f0;
+    text-decoration: none;
+    font-size: 16px;
+    transition: color 0.3s ease-in-out;
+}
+
+.nav-links a:hover {
+    color: #ff6600;
+}
+.hero-section {
+    color: white;
+    text-align: center;
+    padding: 100px 50px;
+    position: relative;
+    overflow: hidden;
+    flex: 1; /* Makes this section fill the available space */
+}
+
+.hero-content {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.hero-section h1 {
+    font-size: 50px;
+    margin-bottom: 20px;
+    font-weight: bold;
+    font-family: 'Poppins', sans-serif;
+    letter-spacing: 2px;
+    animation: fadeInUp 1s ease-out;
+}
+
+.hero-section p {
+    font-size: 18px;
+    margin-bottom: 30px;
+    font-weight: 400;
+    animation: fadeInUp 1.5s ease-out;
+}
+
+.cta-btn {
+    background-color: #ff6600;
+    color: white;
+    padding: 15px 30px;
+    font-size: 18px;
+    text-decoration: none;
+    border-radius: 5px;
+    letter-spacing: 1px;
+    font-weight: 500;
+    transition: background-color 0.3s ease-in-out, transform 0.2s ease-in-out;
+    border: 2px solid #ff6600;
+}
+
+.cta-btn:hover {
+    background-color: #cc5200;
+    transform: scale(1.05);
+}
+
+        .terms-conditions {
+            padding: 60px 30px;
+            max-width: 900px;
+            margin: 50px auto;
+            background: #fff;
+            box-shadow: 0px 6px 20px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+            color: #555;
+        }
+
+        .terms-conditions h1 {
+            font-size: 36px;
+            font-weight: 700;
+            color: #004080;
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        .terms-conditions p,
+        .terms-conditions ul {
+            font-size: 16px;
+            line-height: 1.6;
+            color: #666;
+            margin-bottom: 15px;
+        }
+
+        .terms-conditions ul {
+            padding-left: 20px;
+        }
+
+        .terms-conditions ul li {
+            list-style-type: disc;
+        }
+
+        .terms-conditions h2 {
+            font-size: 24px;
+            color: #004080;
+            margin-top: 30px;
+        }
+
+        .terms-conditions a {
+            color: #ff6600;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .terms-conditions a:hover {
+            color: #cc5200;
+        }
+
+        footer {
+            background-color: #004080;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+
+<body>
+    <header class="navbar">
+        <div class="logo">
+            <a href="home.html">Expert Snippet</a>
+        </div>
+        <nav class="nav-links">
+            <a href="home.html">Home</a>
+            <a href="project.html">Projects</a>
+            <a href="code-editor.html">Code Editor</a>
+            <a href="pic.html">Stock Pictures</a>
+            <a href="lang.html">Language</a>
+            <a href="cont.html">Contact</a>
+            <a href="signin.php">Sign In</a>
+            <a href="signup.php">Sign Up</a>
+        </nav>
+    </header>
+
+    <section class="terms-conditions">
+        <h1>Terms and Conditions</h1>
+
+        <p><strong>Last Updated: January 2025</strong></p>
+
+        <h2>1. Acceptance of Terms</h2>
+        <p>
+            By accessing or using the website <strong>www.expertsnippet.com</strong> (the “Site”) and any services provided through it, you agree to abide by these Terms and Conditions, including any updates or changes that may be made from time to time. If you do not agree to these terms, please do not use our services.
+        </p>
+
+        <h2>2. Changes to Terms</h2>
+        <p>
+            Expert Snippet reserves the right to modify, amend, or update these Terms and Conditions at any time. Any changes will be posted on this page with an updated revision date. It is your responsibility to review these terms regularly. Continued use of the Site following any changes constitutes acceptance of those changes.
+        </p>
+
+        <h2>3. User Account</h2>
+        <p>
+            To access certain services on Expert Snippet, you may be required to create an account. You agree to:
+        </p>
+        <ul>
+            <li>Provide accurate and complete information when registering.</li>
+            <li>Maintain the confidentiality of your account and password.</li>
+            <li>Notify us immediately of any unauthorized use of your account.</li>
+        </ul>
+        <p>You are solely responsible for all activities that occur under your account.</p>
+
+        <h2>4. Use of Services</h2>
+        <p>
+            You may use the Expert Snippet Site and services for lawful purposes only. You agree not to:
+        </p>
+        <ul>
+            <li>Use the Site in any way that violates any applicable local, state, or international laws.</li>
+            <li>Attempt to interfere with the operation of the Site, including the use of any automated means to access the Site.</li>
+            <li>Upload, post, or distribute content that is harmful, offensive, or violates any third-party rights, including intellectual property.</li>
+        </ul>
+
+        <h2>5. Content Ownership</h2>
+        <p>
+            All content on Expert Snippet, including text, images, videos, and other materials, is the property of Expert Snippet or its licensors and is protected by copyright and other intellectual property laws. You may not use, copy, modify, or distribute this content without proper authorization.
+        </p>
+
+        <h2>6. User Content</h2>
+        <p>
+            By submitting content (such as comments, videos, or posts) to Expert Snippet, you grant us a non-exclusive, royalty-free license to use, display, and distribute the content across the Site and through any promotional channels. You represent and warrant that you own or have the necessary rights to submit this content and that it does not infringe on any third-party rights.
+        </p>
+
+        <h2>7. Privacy Policy</h2>
+        <p>
+            Your use of Expert Snippet’s services is also governed by our Privacy Policy, which can be found <a href="privacy-policy.html">here</a>. By using the Site, you consent to the collection and use of your data as outlined in the Privacy Policy.
+        </p>
+
+        <h2>8. Third-Party Links</h2>
+        <p>
+            Expert Snippet may contain links to third-party websites. These links are provided for your convenience, but Expert Snippet does not endorse, control, or assume responsibility for these external websites or their content.
+        </p>
+
+        <h2>9. Disclaimer of Warranties</h2>
+        <p>
+            Expert Snippet’s services are provided “as is” and without warranty of any kind, either express or implied. We do not guarantee that the Site will be error-free or that access will be uninterrupted. You agree to use the Site at your own risk.
+        </p>
+
+        <h2>10. Limitation of Liability</h2>
+        <p>
+            To the fullest extent permitted by law, Expert Snippet, its directors, officers, employees, or agents will not be liable for any indirect, incidental, special, or consequential damages arising from your use or inability to use the Site, including loss of profits, data, or other intangible losses.
+        </p>
+
+        <h2>11. Indemnification</h2>
+        <p>
+            You agree to indemnify and hold harmless Expert Snippet and its affiliates, officers, directors, employees, and agents from any claims, damages, liabilities, or expenses arising from your use of the Site, violation of these Terms and Conditions, or infringement of any third-party rights.
+        </p>
+
+        <h2>12. Termination</h2>
+        <p>
+            Expert Snippet reserves the right to suspend or terminate your account and access to the Site at our sole discretion if you violate these Terms and Conditions or engage in any activity that disrupts the Site’s functionality.
+        </p>
+
+        <h2>13. Governing Law</h2>
+        <p>
+            These Terms and Conditions will be governed by and construed in accordance with the laws of the jurisdiction in which Expert Snippet operates, without regard to its conflict of law principles.
+        </p>
+
+        <h2>14. Dispute Resolution</h2>
+        <p>
+            Any disputes arising from or relating to these Terms and Conditions shall be resolved through binding arbitration in the jurisdiction of Expert Snippet’s principal office.
+        </p>
+
+        <h2>15. Contact Information</h2>
+        <p>
+            If you have any questions about these Terms and Conditions or our services, please contact us at:
+        </p>
+        <p>Email: <a href="mailto:expertsnippet@gmail.com">support@expertsnippet.com</a></p>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Expert Snippet. All rights reserved.</p>
+    </footer>
+</body>
+
+</html>

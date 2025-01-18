@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>All Projects | Expert Snippet</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<style>
+    /* Global Styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to right, #004080, #00aaff); /* Gradient for the whole page */
+    color: #333;
+    height: 100%;
+    overflow-x: hidden;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Navbar Styles */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
+    background-color: #004080;
+}
+
+.navbar .logo a {
+    color: #fff;
+    font-size: 28px;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.nav-links {
+    display: flex;
+    gap: 25px;
+}
+
+.nav-links a {
+    color: #f0f0f0;
+    text-decoration: none;
+    font-size: 16px;
+    transition: color 0.3s ease-in-out;
+}
+
+.nav-links a:hover {
+    color: #ff6600;
+}
+
+/* Hero Section */
+.hero-section {
+    color: white;
+    text-align: center;
+    padding: 100px 50px;
+    position: relative;
+    overflow: hidden;
+}
+
+.hero-content {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.hero-section h1 {
+    font-size: 50px;
+    margin-bottom: 20px;
+    font-weight: bold;
+    font-family: 'Poppins', sans-serif;
+    letter-spacing: 2px;
+    animation: fadeInUp 1s ease-out;
+}
+
+.hero-section p {
+    font-size: 18px;
+    margin-bottom: 30px;
+    font-weight: 400;
+    animation: fadeInUp 1.5s ease-out;
+}
+
+/* Projects Section */
+.projects-section {
+    padding: 60px 50px;
+    text-align: center;
+    background: linear-gradient(to right, #004080, #00aaff); /* Same gradient as the homepage */
+}
+
+.projects-section h2 {
+    font-size: 36px;
+    margin-bottom: 30px;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+}
+
+/* Project Cards Container */
+.container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    margin-top: 30px;
+}
+
+/* Individual Project Card */
+.project-card {
+    background-color: rgba(255, 255, 255, 0.9); /* Slight opacity */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+}
+
+.project-card:hover {
+    transform: translateY(-10px);
+}
+
+.project-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.project-card h3 {
+    font-size: 24px;
+    margin: 15px 0;
+    color: #004080;
+}
+
+.project-card p {
+    color: #333;
+    margin-bottom: 15px;
+}
+
+/* CTA Button for Projects */
+.cta-btn {
+    background-color: #ff6600;
+    color: white;
+    padding: 10px 20px;
+    font-size: 16px;
+    text-decoration: none;
+    border-radius: 5px;
+    letter-spacing: 1px;
+    font-weight: 500;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.cta-btn:hover {
+    background-color: #cc5200;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 20px 0;
+    background-color: #004080;
+    color: white;
+    font-size: 14px;
+}
+
+/* Animations */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+</style>
+<body>
+    <!-- Navbar -->
+    <header class="navbar">
+        <div class="logo">
+            <a href="home.html">Expert Snippet</a>
+        </div>
+        <nav class="nav-links">
+            <a href="home.html">Home</a>
+            <a href="project.html">Projects</a>
+            <a href="code-editor.html">Code Editor</a>
+            <a href="pic.html">Stock Pictures</a>
+            <a href="lang.html">Language</a>
+            <a href="cont.html">Contact</a>
+            <a href="signin.php">Sign In</a>  <!-- Added Sign In -->
+            <a href="signup.php">Sign Up</a>  <!-- Added Sign Up -->
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero-section">
+        <div class="hero-content">
+            <h1>Our All Projects</h1>
+            <p>Discover the projects we’ve built using cutting-edge technologies and innovative solutions.</p>
+        </div>
+    </section>
+
+    <!-- All Projects Section -->
+    <section id="projects" class="projects-section">
+        <div class="container">
+            <!-- Example Project Card 1 -->
+            <div class="project-card">
+                <img src="project1.jpg" alt="Project 1">
+                <h3>Project One</h3>
+                <p>This is a description of Project One. It involves building a cricket-related website using HTML, CSS, and JavaScript.</p>
+                <a href="project1-details.html" class="cta-btn">View Project</a>
+            </div>
+
+            <!-- Example Project Card 2 -->
+            <div class="project-card">
+                <img src="project2.jpg" alt="Project 2">
+                <h3>Project Two</h3>
+                <p>This is a description of Project Two. It involves a full-stack web application for cricket analytics using Python and Flask.</p>
+                <a href="project2-details.html" class="cta-btn">View Project</a>
+            </div>
+
+            <!-- Example Project Card 3 -->
+            <div class="project-card">
+                <img src="project3.jpg" alt="Project 3">
+                <h3>Project Three</h3>
+                <p>This is a description of Project Three. It showcases cricket statistics with interactive charts using JavaScript and Chart.js.</p>
+                <a href="project3-details.html" class="cta-btn">View Project</a>
+            </div>
+
+            <div class="project-card">
+                <img src="project3.jpg" alt="Project 3">
+                <h3>Project Three</h3>
+                <p>This is a description of Project Three. It showcases cricket statistics with interactive charts using JavaScript and Chart.js.</p>
+                <a href="project3-details.html" class="cta-btn">View Project</a>
+            </div>
+
+            <div class="project-card">
+                <img src="project3.jpg" alt="Project 3">
+                <h3>Project Three</h3>
+                <p>This is a description of Project Three. It showcases cricket statistics with interactive charts using JavaScript and Chart.js.</p>
+                <a href="project3-details.html" class="cta-btn">View Project</a>
+            </div>
+
+            <div class="project-card">
+                <img src="project3.jpg" alt="Project 3">
+                <h3>Project Three</h3>
+                <p>This is a description of Project Three. It showcases cricket statistics with interactive charts using JavaScript and Chart.js.</p>
+                <a href="project3-details.html" class="cta-btn">View Project</a>
+            </div>
+
+            <div class="project-card">
+                <img src="project3.jpg" alt="Project 3">
+                <h3>Project Three</h3>
+                <p>This is a description of Project Three. It showcases cricket statistics with interactive charts using JavaScript and Chart.js.</p>
+                <a href="project3-details.html" class="cta-btn">View Project</a>
+            </div>
+
+            <div class="project-card">
+                <img src="project3.jpg" alt="Project 3">
+                <h3>Project Three</h3>
+                <p>This is a description of Project Three. It showcases cricket statistics with interactive charts using JavaScript and Chart.js.</p>
+                <a href="project3-details.html" class="cta-btn">View Project</a>
+            </div>
+
+            <div class="project-card">
+                <img src="project3.jpg" alt="Project 3">
+                <h3>Project Three</h3>
+                <p>This is a description of Project Three. It showcases cricket statistics with interactive charts using JavaScript and Chart.js.</p>
+                <a href="project3-details.html" class="cta-btn">View Project</a>
+            </div>
+            <!-- Add more project cards as needed -->
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 Expert Snippet. All rights reserved.</p>
+    </footer>
+</body>
+</html>

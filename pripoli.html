@@ -1,0 +1,262 @@
+<?php include("header.php"); // Include header if you have a common header file ?>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Privacy Policy - Expert Snippet</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Global Styles */
+        body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to right, #004080, #00aaff); /* Gradient for the whole page */
+    color: #333;
+    height: 100%; /* Ensures the gradient covers the entire height */
+    overflow-x: hidden; /* Prevents horizontal scroll */
+    display: flex;
+    flex-direction: column;
+}
+
+/* Navbar Styles */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
+    background-color: #004080;
+    z-index: 10; /* Keeps navbar on top */
+}
+
+.navbar .logo a {
+    color: #fff;
+    font-size: 28px;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.nav-links {
+    display: flex;
+    gap: 25px;
+}
+
+.nav-links a {
+    color: #f0f0f0;
+    text-decoration: none;
+    font-size: 16px;
+    transition: color 0.3s ease-in-out;
+}
+
+.nav-links a:hover {
+    color: #ff6600;
+}
+.hero-section {
+    color: white;
+    text-align: center;
+    padding: 100px 50px;
+    position: relative;
+    overflow: hidden;
+    flex: 1; /* Makes this section fill the available space */
+}
+
+.hero-content {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.hero-section h1 {
+    font-size: 50px;
+    margin-bottom: 20px;
+    font-weight: bold;
+    font-family: 'Poppins', sans-serif;
+    letter-spacing: 2px;
+    animation: fadeInUp 1s ease-out;
+}
+
+.hero-section p {
+    font-size: 18px;
+    margin-bottom: 30px;
+    font-weight: 400;
+    animation: fadeInUp 1.5s ease-out;
+}
+
+.cta-btn {
+    background-color: #ff6600;
+    color: white;
+    padding: 15px 30px;
+    font-size: 18px;
+    text-decoration: none;
+    border-radius: 5px;
+    letter-spacing: 1px;
+    font-weight: 500;
+    transition: background-color 0.3s ease-in-out, transform 0.2s ease-in-out;
+    border: 2px solid #ff6600;
+}
+
+.cta-btn:hover {
+    background-color: #cc5200;
+    transform: scale(1.05);
+}
+
+        .privacy-policy {
+            padding: 60px 30px;
+            max-width: 900px;
+            margin: 50px auto;
+            background: #fff;
+            box-shadow: 0px 6px 20px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+            color: #555;
+        }
+
+        .privacy-policy h1 {
+            font-size: 36px;
+            font-weight: 700;
+            color: #004080;
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        .privacy-policy p,
+        .privacy-policy ul {
+            font-size: 16px;
+            line-height: 1.6;
+            color: #666;
+            margin-bottom: 15px;
+        }
+
+        .privacy-policy ul {
+            padding-left: 20px;
+        }
+
+        .privacy-policy ul li {
+            list-style-type: disc;
+        }
+
+        .privacy-policy h2 {
+            font-size: 24px;
+            color: #004080;
+            margin-top: 30px;
+        }
+
+        .privacy-policy a {
+            color: #ff6600;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .privacy-policy a:hover {
+            color: #cc5200;
+        }
+
+        footer {
+            background-color: #004080;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+
+<body>
+    <header class="navbar">
+        <div class="logo">
+            <a href="home.html">Expert Snippet</a>
+        </div>
+        <nav class="nav-links">
+            <a href="home.html">Home</a>
+            <a href="project.html">Projects</a>
+            <a href="code-editor.html">Code Editor</a>
+            <a href="pic.html">Stock Pictures</a>
+            <a href="lang.html">Language</a>
+            <a href="cont.html">Contact</a>
+            <a href="signin.php">Sign In</a>
+            <a href="signup.php">Sign Up</a>
+        </nav>
+    </header>
+
+    <section class="privacy-policy">
+        <h1>Privacy Policy</h1>
+
+        <p><strong>Last Updated: January 2025</strong></p>
+
+        <h2>1. Introduction</h2>
+        <p>
+            At Expert Snippet, your privacy is our top priority. This Privacy Policy explains how we collect, use, and protect your personal information when you use our services. By using Expert Snippet, you agree to the terms outlined in this policy.
+        </p>
+
+        <h2>2. Information We Collect</h2>
+        <p>We may collect the following types of information:</p>
+        <ul>
+            <li><strong>Personal Information:</strong> When you sign up for an account or contact us, we may collect your name, email address, and other personal details.</li>
+            <li><strong>Usage Information:</strong> We may collect information about how you use our website, including IP address, browser type, and pages visited.</li>
+            <li><strong>Cookies:</strong> We use cookies to enhance your experience on our site. Cookies are small files stored on your device that help us remember your preferences and improve our services.</li>
+        </ul>
+
+        <h2>3. How We Use Your Information</h2>
+        <p>Your information is used for the following purposes:</p>
+        <ul>
+            <li>To provide and personalize our services to meet your needs.</li>
+            <li>To communicate with you, including sending updates and notifications.</li>
+            <li>To improve our website and services based on your feedback and usage patterns.</li>
+            <li>To ensure the security of our website and protect against fraud.</li>
+        </ul>
+
+        <h2>4. Data Protection</h2>
+        <p>
+            We use industry-standard security measures to protect your data from unauthorized access, alteration, or destruction. However, no method of transmission over the internet is 100% secure, and we cannot guarantee the security of your information.
+        </p>
+
+        <h2>5. Sharing of Information</h2>
+        <p>
+            We do not sell, rent, or trade your personal information to third parties. We may share your information with trusted partners who help us operate our website or provide services on our behalf, but these partners are obligated to maintain the confidentiality of your data.
+        </p>
+
+        <h2>6. Your Rights</h2>
+        <p>
+            You have the right to:
+        </p>
+        <ul>
+            <li>Access the personal information we hold about you.</li>
+            <li>Request corrections or updates to your information.</li>
+            <li>Request the deletion of your personal information, subject to legal obligations.</li>
+        </ul>
+
+        <h2>7. Cookies and Tracking Technologies</h2>
+        <p>
+            We use cookies to enhance your experience on Expert Snippet. By using our website, you consent to the use of cookies. You can control cookies through your browser settings, but please note that disabling cookies may affect certain features of the site.
+        </p>
+
+        <h2>8. Third-Party Links</h2>
+        <p>
+            Our website may contain links to third-party websites. We are not responsible for the privacy practices or content of these external sites. We encourage you to review their privacy policies before providing any personal information.
+        </p>
+
+        <h2>9. Children's Privacy</h2>
+        <p>
+            Expert Snippet does not knowingly collect or solicit personal information from children under the age of 13. If we learn that we have collected personal information from a child under 13, we will delete it immediately.
+        </p>
+
+        <h2>10. Changes to this Privacy Policy</h2>
+        <p>
+            We may update this Privacy Policy from time to time. Any changes will be posted on this page with an updated revision date. Your continued use of the website after such changes constitutes your acceptance of the new Privacy Policy.
+        </p>
+
+        <h2>11. Contact Us</h2>
+        <p>
+            If you have any questions or concerns about this Privacy Policy, please contact us at:
+        </p>
+        <p>Email: <a href="mailto:expertsnippet@gmail.com">support@expertsnippet.com</a></p>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Expert Snippet. All rights reserved.</p>
+    </footer>
+</body>
+
+</html>

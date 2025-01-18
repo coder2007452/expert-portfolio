@@ -1,0 +1,186 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home - Expert Snippet</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<style>
+/* Global Styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to right, #004080, #00aaff); /* Gradient for the whole page */
+    color: #333;
+    height: 100%; /* Ensures the gradient covers the entire height */
+    overflow-x: hidden; /* Prevents horizontal scroll */
+    display: flex;
+    flex-direction: column;
+}
+
+/* Navbar Styles */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
+    background-color: #004080;
+    z-index: 10; /* Keeps navbar on top */
+}
+
+.navbar .logo a {
+    color: #fff;
+    font-size: 28px;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.nav-links {
+    display: flex;
+    gap: 25px;
+}
+
+.nav-links a {
+    color: #f0f0f0;
+    text-decoration: none;
+    font-size: 16px;
+    transition: color 0.3s ease-in-out;
+}
+
+.nav-links a:hover {
+    color: #ff6600;
+}
+
+/* Hero Section (can be skipped or adjusted for About Us page) */
+.hero-section {
+    color: white;
+    text-align: center;
+    padding: 100px 50px;
+    position: relative;
+    overflow: hidden;
+    flex: 1; /* Makes this section fill the available space */
+}
+
+.hero-content {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.hero-section h1 {
+    font-size: 50px;
+    margin-bottom: 20px;
+    font-weight: bold;
+    font-family: 'Poppins', sans-serif;
+    letter-spacing: 2px;
+    animation: fadeInUp 1s ease-out;
+}
+
+.hero-section p {
+    font-size: 18px;
+    margin-bottom: 30px;
+    font-weight: 400;
+    animation: fadeInUp 1.5s ease-out;
+}
+
+.cta-btn {
+    background-color: #ff6600;
+    color: white;
+    padding: 15px 30px;
+    font-size: 18px;
+    text-decoration: none;
+    border-radius: 5px;
+    letter-spacing: 1px;
+    font-weight: 500;
+    transition: background-color 0.3s ease-in-out, transform 0.2s ease-in-out;
+    border: 2px solid #ff6600;
+}
+
+.cta-btn:hover {
+    background-color: #cc5200;
+    transform: scale(1.05);
+}
+
+/* About Us Section */
+.about-us {
+    text-align: center;
+    padding: 60px 50px;
+    background: linear-gradient(to right, #004080, #00aaff); /* Same gradient as the homepage */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    margin-top: -10px; /* Slight overlap with the hero section */
+    color: white;
+}
+
+.about-us h2 {
+    font-size: 36px;
+    margin-bottom: 25px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+}
+
+.about-us p {
+    font-size: 18px;
+    color: #fff; /* White text for better readability */
+    font-weight: 400;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 20px 0;
+    background-color: #004080; /* Same color as the navbar */
+    color: white;
+    font-size: 14px;
+}
+
+/* Animations */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+</style>
+<body>
+    <header class="navbar">
+        <div class="logo">
+            <a href="home.html">Expert Snippet</a>
+        </div>
+        <nav class="nav-links">
+            <a href="home.html">Home</a>
+            <a href="project.html">Projects</a>
+            <a href="code-editor.html">Code Editor</a>
+            <a href="pic.html">Stock Pictures</a>
+            <a href="lang.html">Language</a>
+            <a href="cont.html">Contact</a>
+            <a href="signin.php">Sign In</a>  <!-- Added Sign In -->
+            <a href="signup.php">Sign Up</a>  <!-- Added Sign Up -->
+        </nav>
+    </header>
+
+    <section class="hero-section">
+        <div class="hero-content">
+            <h1 class="animated-title">Welcome to Expert Snippet</h1>
+            <p>Your go-to platform for coding, cricket, and more.</p>
+            <a href="project.html" class="cta-btn">Get Started</a>
+        </div>
+    </section>
+
+    <section class="about-us">
+        <h2>About Us</h2>
+        <p>Expert Snippet offers insightful articles, upcoming cricket match details, and a space for coding enthusiasts to grow together. Whether you're a beginner or an expert, we’ve got something for everyone!</p>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Expert Snippet. All rights reserved.</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Explore a collection of high-quality stock images related to cricket and other categories.">
+    <title>Stock Images - Cricket Blitz</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Link to your CSS file -->
+</head>
+<style>
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(to right, #004080, #00aaff); /* Gradient background for the whole page */
+    color: #333;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    overflow-x: hidden;
+}
+
+/* Navbar Styles */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
+    background-color: #004080;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+
+.navbar .logo a {
+    color: #fff;
+    font-size: 28px;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.nav-links {
+    display: flex;
+    gap: 25px;
+}
+
+.nav-links a {
+    color: #f0f0f0;
+    text-decoration: none;
+    font-size: 16px;
+    transition: color 0.3s ease-in-out;
+}
+
+.nav-links a:hover {
+    color: #ff6600;
+}
+
+/* Hero Section */
+.hero-section {
+    color: white;
+    text-align: center;
+    padding: 100px 50px;
+    position: relative;
+    flex: 1;
+}
+
+.hero-content {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.hero-section h1 {
+    font-size: 50px;
+    margin-bottom: 20px;
+    font-weight: bold;
+    font-family: 'Poppins', sans-serif;
+    letter-spacing: 2px;
+    animation: fadeInUp 1s ease-out;
+}
+
+.hero-section p {
+    font-size: 18px;
+    margin-bottom: 30px;
+    animation: fadeInUp 1s ease-out;
+
+}
+
+.cta-btn {
+    background-color: #ff6600;
+    color: white;
+    padding: 15px 30px;
+    font-size: 18px;
+    text-decoration: none;
+    border-radius: 5px;
+    letter-spacing: 1px;
+    font-weight: 500;
+    transition: background-color 0.3s ease-in-out, transform 0.2s ease-in-out;
+    border: 2px solid #ff6600;
+}
+
+.cta-btn:hover {
+    background-color: #cc5200;
+    transform: scale(1.05);
+}
+
+/* Stock Images Section */
+.stock-images {
+    padding: 50px 20px;
+    text-align: center;
+    background: linear-gradient(to right, #004080, #00aaff); /* Same gradient as the page background */
+}
+
+.section-heading h2 {
+    font-size: 32px;
+    margin-bottom: 10px;
+    color: #fff; /* White text for contrast */
+}
+
+.section-heading p {
+    font-size: 18px;
+    margin-bottom: 40px;
+    color: #f0f0f0;
+}
+
+.images-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 20px;
+}
+
+.image-card {
+    width: 30%;
+    margin: 10px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    background-color: #fff;
+}
+
+.image-card img {
+    width: 100%;
+    height: auto;
+    border-bottom: 2px solid #ddd;
+}
+
+.image-card p {
+    padding: 10px;
+    font-size: 16px;
+    text-align: center;
+    color: #333;
+}
+
+.image-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* Footer Section */
+.footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.footer-links {
+    list-style: none;
+    display: flex;
+}
+
+.footer-links li {
+    margin-left: 20px;
+}
+
+.footer-links a {
+    color: white;
+    font-size: 14px;
+    text-decoration: none;
+}
+
+.footer-links a:hover {
+    text-decoration: underline;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .nav-links {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .images-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .image-card {
+        width: 80%;
+    }
+}
+
+@media (max-width: 480px) {
+    .navbar {
+        padding: 15px 20px;
+    }
+
+    .hero-section {
+        padding: 50px 20px;
+    }
+
+    .cta-btn {
+        font-size: 16px;
+        padding: 12px 25px;
+    }
+}
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+</style>
+<body>
+
+    <!-- Navigation Bar -->
+    <header class="navbar">
+        <div class="logo">
+            <a href="home.php">Expert Snippet</a>
+        </div>
+        <nav class="nav-links">
+            <a href="home.php">Home</a>
+            <a href="project.html">Projects</a>
+            <a href="code-editor.html">Code Editor</a>
+            <a href="pic.html">Stock Pictures</a>
+            <a href="lang.html">Language</a>
+            <a href="cont.html">Contact</a>
+            <a href="signin.php">Sign In</a>  <!-- Added Sign In -->
+            <a href="signup.php">Sign Up</a>  <!-- Added Sign Up -->
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero-section">
+        <div class="hero-content">
+            <h1>Stock Images</h1>
+            <p>Create, edit, and preview your code live in a stylish environment!</p>
+        </div>
+    </section>
+
+
+    <!-- Stock Images Section -->
+    <section id="images" class="stock-images">
+        <div class="section-heading">
+            <h2>Our Stock Images</h2>
+            <p>Click on any image to view and download the full-size version.</p>
+        </div>
+
+        <div class="images-container">
+            <!-- Stock Image 1 -->
+            <div class="image-card">
+                <a href="https://pixabay.com/" target="_blank">
+                    <img src="https://www.example.com/image1-thumbnail.jpg" alt="Cricket Stadium">
+                    <p>Cricket Stadium</p>
+                </a>
+            </div>
+
+            <!-- Stock Image 2 -->
+            <div class="image-card">
+                <a href="https://unsplash.com/" target="_blank">
+                    <img src="https://www.example.com/image2-thumbnail.jpg" alt="Cricket Bat">
+                    <p>Cricket Bat</p>
+                </a>
+            </div>
+
+            <!-- Stock Image 3 -->
+            <div class="image-card">
+                <a href="https://gratisography.com/" target="_blank">
+                    <img src="https://www.example.com/image3-thumbnail.jpg" alt="Cricket Ball">
+                    <p>Cricket Ball</p>
+                </a>
+            </div>
+
+            <!-- Stock Image 4 -->
+            <div class="image-card">
+                <a href="https://picjumbo.com/" target="_blank">
+                    <img src="https://www.example.com/image4-thumbnail.jpg" alt="Cricket Player">
+                    <p>Cricket Player</p>
+                </a>
+            </div>
+            <div class="image-card">
+                <a href="https://stocksnap.io/" target="_blank">
+                    <img src="https://www.example.com/image4-thumbnail.jpg" alt="Cricket Player">
+                    <p>Cricket Player</p>
+                </a>
+            </div>
+            <div class="image-card">
+                <a href="https://www.merriam-webster.com/dictionary/burst" target="_blank">
+                    <img src="https://www.example.com/image4-thumbnail.jpg" alt="Cricket Player">
+                    <p>Cricket Player</p>
+                </a>
+            </div>
+
+            <!-- Add more images as needed -->
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer class="footer">
+        <div class="footer-container">
+            <p>&copy; 2025 Cricket Blitz. All Rights Reserved.</p>
+            <ul class="footer-links">
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="privacy.html">Privacy Policy</a></li>
+            </ul>
+        </div>
+    </footer>
+
+</body>
+</html>
